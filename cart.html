@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+
+  <!-- Bootstrap CSS -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="assets/css/all.min.css" rel="stylesheet" />
+  <link href="assets/css/fontawesome.css" rel="stylesheet" />
+  <link href="assets/css/owl.carousel.min.css" rel="stylesheet" />
+  <link href="assets/css/default.css" rel="stylesheet" />
+  <link href="assets/css/main.css" rel="stylesheet" />
+  <link href="assets/css/responsive.css" rel="stylesheet" />
+
+  <title>SHOPPING CART</title>
+</head>
+
+<body>
+  <div id="menu" class="mobile-white">
+    <ul>
+      <li>
+        <a href="">Search<span>.</span></a>
+      </li>
+      <li>
+        <a href="">Products<span>.</span></a>
+      </li>
+      <li>
+        <a href="">Services<span>.</span></a>
+      </li>
+      <li>
+        <a href="">Contacts<span>.</span></a>
+      </li>
+      <li>
+        <a style="color: #00ccff" href="">Cart<span>.</span><img src="assets/img/icon-cart.svg" alt="" /></a>
+      </li>
+      <li>
+        <a style="color: #00ccff" href="">Login<span>.</span><img src="assets/img/icon-profile.svg" alt="" /></a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Header area start -->
+  <div class="header__area header-white">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-7">
+          <div class="header_left_blk">
+            <div class="site_logo">
+              <a href=""><img src="assets/img/header-logo.svg" alt="" />REXROTH-PARTS</a>
+              <div id="toggle">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+              </div>
+            </div>
+            <div class="site_main_menu">
+              <span class="menu_close"><i class="fal fa-times"></i></span>
+              <ul>
+                <li>
+                  <a href="">Search<span>.</span></a>
+                </li>
+                <li>
+                  <a href="">Products<span>.</span></a>
+                </li>
+                <li>
+                  <a href="">Services<span>.</span></a>
+                </li>
+                <li>
+                  <a href="">Contacts<span>.</span></a>
+                </li>
+              </ul>
+            </div>
+            <!-- <div class="overaly-main"></div> -->
+          </div>
+        </div>
+        <div class="col-lg-5 d-none d-lg-block">
+          <div class="site_header_right">
+            <ul>
+              <li>
+                <a href=""><i class="fas fa-caret-down"></i>Cart<img src="assets/img/icon-cart.svg" alt="icon" /></a>
+                <ul>
+                  <li><a href="">R902485944</a></li>
+                  <li><a href="">R902484643</a></li>
+                  <li><a href="">R902489234</a></li>
+                  <li><a href="">R902482657 </a></li>
+                  <li><a href="">OPEN CART</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="">Login<img src="assets/img/icon-profile.svg" alt="icon" /></a>
+              </li>
+              <li>
+                <a href=""><i class="fas fa-caret-down"></i>eur<img src="assets/img/icon-euro.svg" alt="icon" /></a>
+                <ul>
+                  <li><a href="">USD</a></li>
+                  <li><a href="">CZK</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href=""><i class="fas fa-caret-down"></i>english<img src="assets/img/icon-lang.svg" alt="icon" /></a>
+                <ul>
+                  <li><a href="">ČESKY</a></li>
+                  <li><a href="">POLSKIE</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Header area end -->
+  <!-- Inner content area start -->
+
+  <div class="list-products-area pt-60 pb-60">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-4 col-lg-4 col-md-4">
+          <div class="section-title">
+            <h1>SHOPPING CART</h1>
+          </div>
+        </div>
+        <div class="col-xl-8 col-lg-8 col-md-8 col-12 text-end">
+          <div class="input-wrap-list">
+            <form action="#">
+              <input type="text" placeholder="enter code or name" />
+              <button type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="list-products-body">
+        <div class="row bg-white pt-40 pb-20">
+          <div class="col-xl-12">
+            <nav class="cart-tab mb-50 mb-xs-0">
+              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+                  type="button" role="tab" aria-controls="nav-home" aria-selected="true">
+                  1. Cart
+                </button>
+                <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                  type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
+                  2. delivery
+                </button>
+                <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
+                  type="button" role="tab" aria-controls="nav-contact" aria-selected="false">
+                  3. summary
+                </button>
+              </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                <div class="row mb-80 mb-xs-0">
+                  <div class="col-12 d-none d-lg-block">
+                    <div class="cart-product-responsive">
+                      <div class="cart-product-wrapper">
+                        <div class="number">
+                          <h5>Part Number</h5>
+                        </div>
+                        <div class="title">
+                          <h5>product</h5>
+                        </div>
+                        <div class="category">
+                          <h5>Category</h5>
+                        </div>
+                        <div class="quantity">
+                          <h5>Quantity</h5>
+                        </div>
+                        <div class="unit-price">
+                          <h5>Unit Price</h5>
+                        </div>
+                        <div class="total">
+                          <h5>Total</h5>
+                        </div>
+                      </div>
+                      <div class="cart-product-wrapper">
+                        <div class="number">R902485944</div>
+                        <div class="title">
+                          AL A10V O 28ED 72/52R-VRC12K68P-SO965
+                        </div>
+                        <div class="category">A10VO</div>
+                        <div class="quantity">
+                          <div class="products-amount">
+                            <form action="#">
+                              <div class="input-wrap">
+                                <span class="minus"><i class="fas fa-minus"></i></span>
+                                <input type="text" class="qty" step="1" value="1" min="0">
+                                <span class="plus"><i class="fas fa-plus"></i></span>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                        <div class="unit-price">2 071.05 €</div>
+                        <div class="total">4 142.10 € <a href="#">X</a></div>
+                      </div>
+                      <div class="cart-product-wrapper">
+                        <div class="number">R992000665</div>
+                        <div class="title">AL A10F M 23 /52W-VRC66N000</div>
+                        <div class="category">A10FM</div>
+                        <div class="quantity">
+                          <div class="products-amount">
+                            <form action="#">
+                              <div class="input-wrap">
+                                <span class="minus"><i class="fas fa-minus"></i></span>
+                                <input type="text" class="qty" step="1" value="1" min="0">
+                                <span class="plus"><i class="fas fa-plus"></i></span>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                        <div class="unit-price">1 071.05 €</div>
+                        <div class="total">1 071.05 € <a href="#">X</a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 d-lg-none d-block">
+                    <div class="cart-product-mobile">
+                      <div class="number">
+                        <span>part number</span>
+                        <span>R902485944</span>
+                      </div>
+                      <div class="title">
+                        <span>product</span>
+                        <span>
+                          AL A10V O 28ED 72/52R-VRC12K68P-SO965
+                        </span>
+                      </div>
+                      <div class="category">
+                        <span>category</span>
+                        <span>A10VO</span>
+                      </div>
+                      <div class="quantity">
+                        <span>quantity</span>
+                        <span>
+                          <div class="products-amount">
+                            <form action="#">
+                              <div class="input-wrap">
+                                <span class="minus"><i class="fas fa-minus"></i></span>
+                                <input type="text" class="qty" step="1" value="1" min="0">
+                                <span class="plus"><i class="fas fa-plus"></i></span>
+                              </div>
+                            </form>
+                          </div>
+                        </span>
+                      </div>
+                      <div class="unit-price">
+                        <span>unit price</span>
+                        <span>2 071.05 €</span>
+                      </div>
+                      <div class="total">
+                        <span>total</span>
+                        <span>4 142.10 € <a href="#">X</a></span>
+                      </div>
+                    </div>
+                    <div class="cart-product-mobile">
+                      <div class="number">
+                        <span>part number</span>
+                        <span>R992000665</span>
+                      </div>
+                      <div class="title">
+                        <span>product</span>
+                        <span>AL A10F M 23 /52W-VRC66N000</span>
+                      </div>
+                      <div class="category">
+                        <span>category</span>
+                        <span>A10FM</span>
+                      </div>
+                      <div class="quantity">
+                        <span>quantity</span>
+                        <span>
+                          <div class="products-amount">
+                            <form action="#">
+                              <div class="input-wrap">
+                                <span class="minus"><i class="fas fa-minus"></i></span>
+                                <input type="text" class="qty" step="1" value="1" min="0">
+                                <span class="plus"><i class="fas fa-plus"></i></span>
+                              </div>
+                            </form>
+                          </div>
+                        </span>
+                      </div>
+                      <div class="unit-price">
+                        <span>unit price</span>
+                        <span>1 071.05 €</span>
+                      </div>
+                      <div class="total">
+                        <span>total</span>
+                        <span>1 071.05 € <a href="#">X</a></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mb-50 mb-xs-20">
+                  <div class="col-lg-6">
+                    <div class="ship-to-wrap mb-30">
+                      <form action="#">
+                        <div class="input-wrap input-select">
+                          <label for="ship">ship to:</label>
+                          <select name="ship" id="ship">
+                            <option value="ship">Czech Republic</option>
+                            <option value="ship">Czech Republic</option>
+                            <option value="ship">Czech Republic</option>
+                          </select>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="ship-to-content">
+                      <h5>SP Business services for EU companies</h5>
+                      <p>
+                        Businesses from your country can benefit from VAT
+                        excluded prices. <br />
+                        You just need to fill your company's details during
+                        the checkout process.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="product-equation-wrap">
+                      <div class="title">
+                        <h5>Subtotal</h5>
+                      </div>
+                      <div class="amount">5 213.15 €</div>
+                    </div>
+                    <div class="product-equation-wrap">
+                      <div class="title">
+                        <h5>Shipping Fee</h5>
+                      </div>
+                      <div class="amount">17.99 €</div>
+                    </div>
+                    <div class="product-equation-wrap">
+                      <div class="title">
+                        <h5>VAT (21 %)</h5>
+                      </div>
+                      <div class="amount">1 199,02 €</div>
+                    </div>
+                    <div class="product-equation-wrap">
+                      <div class="title">
+                        <h5>Grand Total</h5>
+                      </div>
+                      <div class="amount">
+                        <h6>6 430,16 €</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mb-30 justify-content-between">
+                  <div class="col-md-4 d-md-block d-none mb-xs-20">
+                    <a href="#" class="cart-btn-1 blue">Search</a>
+                  </div>
+                  <div class="col-md-4 mb-xs-20 text-center">
+                    <a href="#" class="cart-btn-1 text-center">Update</a>
+                  </div>
+                  <div class="col-md-4 text-end">
+                    <a href="#" class="cart-btn-1 red">Continue</a>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                <div class="row">
+                  <div class="col-xl-6 col-lg-6 col-12">
+                    <div class="register-form mb-30">
+                      <h5 class="title">payment information</h5>
+                      <form action="#">
+                        <div class="input-checkbox input-radio">
+                          <input type="radio" id="apply-2" name="payment" />
+                          <label for="apply-2">
+                            <div class="checkmark"></div>
+                            Online payment gateway
+                          </label>
+                        </div>
+                        <div class="input-checkbox input-radio">
+                          <input type="radio" id="apply-3" name="payment" />
+                          <label for="apply-3">
+                            <div class="checkmark"></div>
+                            By transfer
+                          </label>
+                        </div>
+                        <div class="input-checkbox input-radio">
+                          <input type="radio" id="apply-5" name="payment" />
+                          <label for="apply-5">
+                            <div class="checkmark"></div>
+                            PayPal
+                          </label>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="register-form mb-xs-30 register-form-2">
+                      <h5 class="title">Billing address</h5>
+                      <form action="#">
+                        <div class="register-form-box">
+                          <div class="input-wrap">
+                            <label for="#">IČ <span></span></label>
+                            <input type="text" placeholder="69644918" />
+                          </div>
+                          <div class="input-wrap">
+                            <label for="#">VAT <span></span></label>
+                            <input type="text" placeholder="CZ7408124768" />
+                          </div>
+                          <div class="input-wrap">
+                            <label for="#">Company <span></span></label>
+                            <input type="text" placeholder="EDDO" />
+                          </div>
+                          <div class="input-wrap">
+                            <label for="#">First name <span>*</span></label>
+                            <input type="text" placeholder="Eduard" />
+                          </div>
+                          <div class="input-wrap">
+                            <label for="#">Last name <span>*</span></label>
+                            <input type="text" placeholder="Doležal" />
+                          </div>
+                          <div class="input-wrap">
+                            <label for="#">Street <span>*</span></label>
+                            <input type="text" placeholder="Banskobystrická 359/100" />
+                          </div>
+                          <div class="input-wrap">
+                            <label for="#">ZIP <span>*</span></label>
+                            <input type="text" placeholder="621 00" />
+                          </div>
+                          <div class="input-wrap">
+                            <label for="#">City <span>*</span></label>
+                            <input type="text" placeholder="Brno" />
+                          </div>
+                          <div class="input-wrap">
+                            <label for="#">Email <span>*</span></label>
+                            <input type="email" placeholder="Strdolezal@eddo.czeet" />
+                          </div>
+                          <div class="input-wrap">
+                            <label for="#">Phone <span>*</span></label>
+                            <input type="text" placeholder="+420 777 669 174" />
+                          </div>
+                        </div>
+
+                      </form>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-6 col-12">
+                    <div class="register-form mb-30">
+                      <h5 class="title">Method of transport:</h5>
+                      <form action="#">
+                        <div class="input-checkbox input-radio">
+                          <input type="radio" id="apply-6" name="TRANSPORT" />
+                          <label for="apply-6">
+                            <div class="checkmark"></div>
+                            DPD – výdejní místo: 69 Kč
+                          </label>
+                        </div>
+                        <div class="input-checkbox input-radio">
+                          <input type="radio" id="apply-7" name="TRANSPORT" />
+                          <label for="apply-7">
+                            <div class="checkmark"></div>
+                            DPD: 99 Kč
+                          </label>
+                        </div>
+                        <div class="input-checkbox input-radio">
+                          <input type="radio" id="apply-8" name="TRANSPORT" />
+                          <label for="apply-8">
+                            <div class="checkmark"></div>
+                            Osobní odběr – ZDARMA: 0 Kč
+                          </label>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="register-form register-form-2">
+                      <h5 class="title">Shipping address</h5>
+                      <form action="#">
+                        <div class="register-form-box">
+                          <div class="input-checkbox shipping-checkmark">
+                            <input type="checkbox" id="apply-9" />
+                            <label for="apply-9">
+                              <div class="checkmark"></div>
+                              My shipping address is the same as my billing
+                              address.
+                            </label>
+                          </div>
+                          <div class="shipping-fields">
+                            <div class="input-wrap">
+                              <label for="#">Company <span></span></label>
+                              <input type="text" placeholder="Opravář" />
+                            </div>
+                            <div class="input-wrap">
+                              <label for="#">First name <span>*</span></label>
+                              <input type="text" placeholder="Dlouhán" />
+                            </div>
+                            <div class="input-wrap">
+                              <label for="#">Last name <span>*</span></label>
+                              <input type="text" placeholder="Hubený" />
+                            </div>
+                            <div class="input-wrap">
+                              <label for="#">Street <span>*</span></label>
+                              <input type="text" placeholder="Jungmannova 753" />
+                            </div>
+                            <div class="input-wrap">
+                              <label for="#">ZIP <span>*</span></label>
+                              <input type="text" placeholder="666 01" />
+                            </div>
+                            <div class="input-wrap">
+                              <label for="#">City <span>*</span></label>
+                              <input type="text" placeholder="Tišnov" />
+                            </div>
+                          </div>
+                        </div>
+
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <div class=" mt-30">
+                      <button class="cart-btn-1 blue">Cart</button>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="mt-30 text-end">
+                      <button class="cart-btn-1 blue">continue</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                <div class="row justify-content-center">
+                  <div class="col-xl-6 col-lg-8 col-md-10">
+                    <div class="register-form">
+                      <h5 class="title">Customer's Register</h5>
+                      <form action="#">
+                        <div class="input-wrap">
+                          <label for="#">Phone <span>*</span></label>
+                          <input type="text" placeholder="Phone" />
+                        </div>
+                        <div class="input-wrap">
+                          <label for="#">Email <span>*</span></label>
+                          <input type="text" placeholder="Email" />
+                        </div>
+                        <div class="input-wrap">
+                          <label for="#">Password <span>*</span></label>
+                          <input type="password" placeholder="Password" />
+                        </div>
+                        <div class="input-wrap">
+                          <label for="#">IČ</label>
+                          <input type="text" placeholder="IČ" />
+                        </div>
+                        <div class="input-wrap">
+                          <label for="#">VAT</label>
+                          <input type="text" placeholder="DIČ" />
+                        </div>
+                        <div class="input-wrap">
+                          <label for="#">Company <span>*</span></label>
+                          <input type="text" placeholder="Company" />
+                        </div>
+                        <div class="input-wrap">
+                          <label for="#">First Name <span>*</span></label>
+                          <input type="text" placeholder="First Name" />
+                        </div>
+                        <div class="input-wrap">
+                          <label for="#">Last Name <span>*</span></label>
+                          <input type="text" placeholder="Last Name" />
+                        </div>
+                        <div class="input-wrap">
+                          <label for="#">Street <span>*</span></label>
+                          <input type="text" placeholder="Street" />
+                        </div>
+                        <div class="input-wrap">
+                          <label for="#">ZIP <span>*</span></label>
+                          <input type="text" placeholder="ZIP" />
+                        </div>
+                        <div class="input-wrap">
+                          <label for="#">City <span>*</span></label>
+                          <input type="text" placeholder="City" />
+                        </div>
+                        <div class="input-checkbox">
+                          <input type="checkbox" id="apply-3" />
+                          <label for="apply-3">
+                            <div class="checkmark"></div>
+                            I’ve read and accept the Terms & Conditions
+                          </label>
+                        </div>
+                        <div class="input-button">
+                          <button>Register</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Inner content area end -->
+
+  <!-- Footer top area start -->
+  <div class="footer__top__area">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="footer_top_content">
+            <h3><span>ABOUT</span> REXROTH-PARTS</h3>
+            <p>
+              Supports end users on the proccess of choosing the right spare
+              part amongst different options for any application. If you want
+              to know more about us reach us on the contact section or
+              subscribe to our newsletter.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="subs_blk">
+            <h3>Stay updated</h3>
+            <form action="">
+              <div class="src_form_inner">
+                <input type="text" placeholder="Your email" />
+                <button type="submit">SUBSCRIBE</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer top area end -->
+
+  <!-- Footer area start -->
+  <div class="footer__area">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-3 col-6">
+          <div class="footer_signle_widget">
+            <h4 class="widget_title">2021 © REXROTH-PARTS</h4>
+            <div class="footer_menu">
+              <ul>
+                <li><a href="">Terms & Conditions</a></li>
+                <li>
+                  <a href="">Privacy</a>
+                </li>
+                <li>
+                  <a href="">Contacts</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-6">
+          <div class="footer_signle_widget">
+            <h4 class="widget_title">Certified partner</h4>
+            <div class="footer_img">
+              <img src="assets/img/f1.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6">
+          <div class="footer_signle_widget">
+            <h4 class="widget_title">Payment methods</h4>
+            <div class="pm_mth">
+              <a href=""><img src="assets/img/p1.png" alt="" /></a>
+              <a href=""><img src="assets/img/p2.png" alt="" /></a>
+              <a href=""><img src="assets/img/p3.png" alt="" /></a>
+              <a href=""><img src="assets/img/p4.png" alt="" /></a>
+              <a href=""><img src="assets/img/p5.png" alt="" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer area end -->
+
+  <!-- Optional JavaScript; choose one of the two! -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/popper.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/owl.carousel.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    $("#toggle").click(function () {
+      $(this).toggleClass("on");
+      $("#menu").slideToggle();
+    });
+  </script>
+</body>
+
+</html>

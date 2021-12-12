@@ -1,0 +1,278 @@
+@use "common"as *;
+
+.header__area {
+  border-bottom: 1px solid #56000e;
+  padding: 19px 30px;
+}
+
+.site_main_menu {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      display: inline-block;
+      margin-left: 40px;
+
+      a {
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: 300;
+        color: #fff;
+        transition: 0.4s;
+      }
+    }
+  }
+}
+
+.header_left_blk {
+  display: flex;
+  align-items: center;
+}
+
+.site_logo {
+  a {
+    font-size: 18px;
+    font-weight: 800;
+    color: #fff;
+  }
+}
+
+.site_logo {
+  a {
+    img {
+      margin-right: 8px;
+      width: 50px;
+      @include mq(xl){
+        width: 45px;
+      }
+      @include mq(lg){
+        width: 40px;
+      }
+      @include mq(md){
+        width: 36px;
+      }
+      @include mq(xs){
+        width: 36px;
+      }
+    }
+  }
+}
+
+.site_header_right {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: right;
+
+    li {
+      display: inline-block;
+      position: relative;
+
+      &:nth-child(3) {
+        a {
+          width: 102px;
+        }
+      }
+
+      &:last-child {
+        a {
+          width: 150px;
+        }
+      }
+
+      a {
+        color: #00ccff;
+        font-size: 18px;
+        font-weight: 300;
+        text-transform: uppercase;
+        position: relative;
+        padding: 9px 13px;
+        display: block;
+        transition: 0.3s;
+        border: 1px solid transparent;
+        width: 133px;
+        text-align: left;
+
+        img {
+          margin-left: 10px;
+          height: 30px;
+        }
+
+        i {
+          position: absolute;
+          left: 14px;
+          bottom: 0;
+          color: #df0024;
+        }
+      }
+
+      &:hover {
+        ul {
+          opacity: 1;
+          visibility: visible;
+        }
+
+        a {
+          border: 1px solid #0cf;
+          background: #002c49;
+        }
+      }
+
+      ul {
+        position: absolute;
+        left: 0;
+        top: 100%;
+        background: #002c49;
+        width: 100%;
+        text-align: left;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 99;
+        transition: 0.3s;
+
+        li {
+          margin: 0;
+          display: block;
+
+          a {
+            font-size: 14px;
+            display: block;
+            padding: 8px 8px;
+            color: #fff;
+            border-left: 1px solid #00ccff;
+            border-right: 1px solid #0cf;
+            border-bottom: 1px solid #00ccff;
+            width: 100% !important;
+
+            img {
+              height: 17px;
+            }
+
+            &:hover {
+              font-weight: 700;
+              color: #00ccff;
+            }
+          }
+        }
+      }
+
+      &:hover {
+        ul {
+          li {
+            a {
+              border-top: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.menu_men_open {
+  display: none;
+}
+
+.menu_close {
+  display: none;
+}
+
+::placeholder {
+  color: #fff;
+  opacity: 1;
+  /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #fff;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #fff;
+}
+
+.search_blk br {
+  display: none;
+}
+
+/* Header white start */
+
+.header-white {
+  background: #fff;
+  border-bottom: 1px solid #ef7f91;
+
+  .site_logo {
+    a {
+      color: #002c49;
+      display: flex;
+    align-items: center;
+    }
+  }
+
+  .site_main_menu {
+    ul {
+      li {
+        a {
+          color: #002c49;
+        }
+      }
+    }
+  }
+
+  .site_header_right {
+    ul {
+      li {
+        &:hover {
+          a {
+            background: rgb(0 204 255 / 50%);
+            color: #000;
+          }
+
+          ul {
+            li {
+              a {
+                background: #fff;
+                color: #555;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#menu.mobile-white {
+  background: #fff;
+  border-bottom: 1px solid #ef7f91;
+
+  ul {
+    li {
+      a {
+        color: #000;
+
+        &:hover {
+          color: #0cf;
+        }
+      }
+    }
+  }
+}
+
+.src_form_inner.new_src{
+  @include mq(md){
+    justify-content: start;
+  }
+  input{
+    @include mq(md){
+      width: 280px!important;
+    }
+  }
+}
+
+/* Header white end */

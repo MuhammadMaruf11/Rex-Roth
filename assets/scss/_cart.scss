@@ -1,0 +1,417 @@
+@use "common"as *;
+
+.mb-xs-30 {
+  @include mq(md) {
+    margin-bottom: 30px;
+  }
+
+  @include mq(xs) {
+    margin-bottom: 30px;
+  }
+}
+
+.mb-xs-20 {
+  @include mq(md) {
+    margin-bottom: 30px;
+  }
+
+  @include mq(xs) {
+    margin-bottom: 30px;
+  }
+}
+
+.mb-xs-0{
+  @include mq(xs){
+    margin-bottom: 0;
+  }
+}
+
+.cart-product-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  border-bottom: 1px solid #e5e9ec;
+
+  h5 {
+    color: #606060;
+  }
+
+  .number {
+    font-size: 18px;
+    color: #002c49;
+    text-transform: uppercase;
+  }
+
+  .title {
+    font-size: 18px;
+    color: #002c49;
+    text-transform: uppercase;
+  }
+
+  .category {
+    font-size: 18px;
+    color: #002c49;
+    text-transform: uppercase;
+  }
+
+  .quantity {
+    font-size: 18px;
+    color: #002c49;
+    text-align: center;
+    text-transform: uppercase;
+
+    .products-amount {
+      .input-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 140px;
+        margin: 0 auto;
+
+        .minus {
+          font-size: 18px;
+          color: #00ccff;
+          cursor: pointer;
+        }
+
+        input {
+          width: 65px;
+          height: 40px;
+          color: #002c49;
+          text-align: center;
+          border: 1px solid #00ccff;
+          outline: none;
+          font-size: 24;
+          font-weight: 300;
+          margin: 0 10px;
+        }
+
+        .plus {
+          font-size: 18px;
+          color: #00ccff;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .unit-price {
+    font-size: 18px;
+    color: #002c49;
+    text-transform: uppercase;
+  }
+
+  .total {
+    font-size: 18px;
+    color: #002c49;
+    text-transform: uppercase;
+
+    a {
+      color: #e00024;
+      font-weight: 700;
+      margin-left: 30px;
+
+      @include mq(lg) {
+        margin-left: 15px;
+      }
+    }
+  }
+}
+
+.ship-to-wrap {
+  .input-wrap {
+    display: inline-block;
+
+    label {
+      font-size: 18px;
+      font-weight: 700;
+      color: #606060;
+      text-transform: uppercase;
+      margin-right: 12px;
+    }
+
+    select {
+      width: 180px;
+      height: 40px;
+      outline: none;
+      border: 1px solid #0cf;
+      color: #002c49;
+      appearance: none;
+      cursor: pointer;
+      padding: 0 5px;
+      font-size: 18px;
+
+      @include mq(lg) {
+        width: 180px;
+      }
+
+      @include mq(md) {
+        width: 180px;
+        font-size: 16px;
+      }
+
+      @include mq(xs) {
+        width: 100%;
+        font-size: 16px;
+      }
+    }
+
+    &.input-select {
+      position: relative;
+
+      &:after {
+        position: absolute;
+        content: "";
+        color: #e00024;
+        right: 7px;
+        top: 45%;
+        transform: translateY(-50%);
+        font-family: "Font Awesome 5 Pro";
+        font-weight: 700;
+        pointer-events: none;
+
+        @include mq(xs) {
+          top: 68%;
+        }
+      }
+    }
+  }
+}
+
+.ship-to-content {
+  h5 {
+    color: #e00024;
+    font-size: 18px;
+
+    @include mq(xs) {
+      font-size: 16px;
+    }
+  }
+
+  p {
+    font-size: 18px;
+    color: #002c49;
+
+    @include mq(xs) {
+      font-size: 16px;
+    }
+  }
+}
+
+.product-equation-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-top: 1px solid #e5e9ec;
+
+  &:last-child {
+    border-bottom: 1px solid #e5e9ec;
+  }
+
+  .title {
+    text-align: right;
+    margin-right: 20px;
+    padding: 15px 0;
+    text-transform: uppercase;
+
+    @include mq(lg) {
+      padding: 10px 0;
+    }
+
+    @include mq(md) {
+      padding: 10px 0;
+    }
+
+    h5 {
+      color: #606060;
+      font-size: 18px;
+      margin-bottom: 0;
+
+      @include mq(xs) {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .amount {
+    text-align: left;
+    margin-left: 20px;
+    color: #002c49;
+    font-size: 18px;
+    padding: 15px 0;
+
+    @include mq(lg) {
+      padding: 10px 0;
+    }
+
+    @include mq(md) {
+      padding: 10px 0;
+    }
+
+    @include mq(xs) {
+      font-size: 16px;
+    }
+
+    h6 {
+      color: #002c49;
+      font-size: 18px;
+      margin-bottom: 0;
+
+      @include mq(xs) {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.cart-btn-1 {
+  display: inline-block;
+  width: 265px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  border: 1px solid #0cf;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 700;
+  color: #002c49;
+  @include transition(0.3s);
+
+  @include mq(md) {
+    width: 200px;
+  }
+
+  @include mq(xs) {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+  }
+
+  &:hover {
+    background: #0cf;
+    color: #002c49;
+    border-color: #0cf;
+  }
+
+  &.blue {
+    background: #0cf;
+
+    &:hover {
+      background: #fff;
+      border-color: #0cf;
+      color: #002c49;
+    }
+  }
+
+  &.red {
+    background: #e00024;
+    border-color: #e00024;
+    color: #fff;
+
+    &:hover {
+      color: #002c49;
+      background: #fff;
+      border: 1px solid #0cf;
+    }
+  }
+}
+
+.cart-product-responsive {
+  overflow-x: auto;
+
+  .cart-product-wrapper {
+    @include mq(md) {
+      width: 1024px;
+    }
+
+    @include mq(xs) {
+      width: 1024px;
+    }
+
+    .total a {
+      @include mq(md) {
+        margin-left: 15px;
+      }
+
+      @include mq(xs) {
+        margin-left: 15px;
+      }
+    }
+  }
+}
+
+.cart-product-mobile{
+  border: 1px solid #e5e9ec;
+  padding: 15px;
+  background: #f8f8f8;
+  margin-bottom: 20px;
+  @include mq(xs){
+    padding: 10px;
+  }
+  .number,
+  .title,
+  .category,
+  .quantity,
+  .unit-price,
+  .total{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    border-bottom: 1px solid #e5e9ec;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    &:last-child{
+      border-bottom: 0;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+    span{
+      &:first-child{
+        text-transform: uppercase;
+        font-weight: 700;
+      }
+    }
+  }
+  .quantity{
+    .products-amount{
+      .input-wrap{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: start;
+        width: 140px;
+        .minus{
+          font-size: 14px;
+          color: #00ccff;
+          cursor: pointer;
+        }
+        input{
+          width: 40px;
+          height: 30px;
+          color: #002c49;
+          text-align: center;
+          border: 1px solid #00ccff;
+          outline: none;
+          font-size: 16px;
+          font-weight: 300;
+          margin: 0 10px;
+        }
+        .plus{
+          font-size: 14px;
+          color: #00ccff;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .total{
+    span{
+      a{
+      color: #e00024;
+      font-weight: 700;
+      margin-left: 30px;
+      }
+    }
+  }
+}

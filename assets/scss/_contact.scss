@@ -1,0 +1,241 @@
+@use "common" as *;
+
+.contact-area {
+  @include mq(xs) {
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+}
+
+.contact-wrap {
+  h1.title {
+    font-size: 24px;
+    color: #0cf;
+    margin-bottom: 30px;
+    @include mq(xs){
+        margin-bottom: 20px;
+    }
+  }
+  .contact-wrapper {
+    h6.contact-title {
+      font-size: 18px;
+      color: #fff;
+      margin-bottom: 5px;
+      @include mq(md){
+        font-size: 16px;
+    }
+    @include mq(xs){
+        font-size: 16px;
+    }
+    }
+    .contact-items {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-bottom: 30px;
+      .contact-img {
+        img {
+          margin-right: 10px;
+          width: 50px;
+          @include mq(lg){
+            width: 40px;
+          }
+          @include mq(md){
+            width: 36px;
+          }
+          @include mq(xs){
+            width: 36px;
+          }
+        }
+      }
+      .contact-content {
+        flex: 1 0 0%;
+        span {
+          color: #fff;
+          font-size: 18px;
+          @include mq(md){
+              font-size: 16px;
+          }
+          @include mq(xs){
+              font-size: 16px;
+          }
+        }
+        a {
+          color: #fff;
+          font-size: 18px;
+          text-decoration: underline;
+          @include mq(md){
+            font-size: 16px;
+        }
+        @include mq(xs){
+            font-size: 16px;
+        }
+        }
+      }
+    }
+  }
+}
+
+.contact-form {
+  .input-wrap {
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: end;
+    @include mq(xs){
+        justify-content: start;
+    }
+    label {
+      font-size: 18px;
+      color: #fff;
+      text-transform: uppercase;
+      margin-right: 10px;
+      margin-top: 5px;
+      cursor: pointer;
+      @include mq(md){
+          font-size: 16px;
+      }
+      @include mq(xs){
+          font-size: 16px;
+          margin-bottom: 10px;
+          margin-top: 0;
+      }
+    }
+    select {
+      width: 600px;
+      height: 40px;
+      background: #000;
+      outline: none;
+      border: 1px solid #0cf;
+      color: #fff;
+      appearance: none;
+      cursor: pointer;
+      padding: 0 5px;
+      font-size: 18px;
+      @include mq(lg) {
+        width: 500px;
+      }
+      @include mq(md) {
+        width: 375px;
+        font-size: 16px;
+      }
+      @include mq(xs) {
+        width: 100%;
+        font-size: 16px;
+      }
+    }
+    &.input-select {
+      position: relative;
+      &:after {
+        position: absolute;
+        content: "";
+        color: #e00024;
+        right: 10px;
+        top: 45%;
+        transform: translateY(-50%);
+        font-family: "Font Awesome 5 Pro";
+        font-weight: 700;
+        pointer-events: none;
+        @include mq(xs){
+          top: 68%;
+        }
+      }
+    }
+    input {
+      width: 600px;
+      height: 40px;
+      background: #000;
+      outline: none;
+      border: 1px solid #0cf;
+      color: #fff;
+      padding: 12px 5px;
+      font-size: 18px;
+      @include mq(lg) {
+        width: 500px;
+      }
+      @include mq(md) {
+        width: 375px;
+        font-size: 16px;
+      }
+      @include mq(xs) {
+        width: 100%;
+        font-size: 16px;
+      }
+    }
+    textarea {
+      width: 600px;
+      height: 175px;
+      background: #000;
+      outline: none;
+      border: 1px solid #0cf;
+      color: #fff;
+      padding: 12px 5px;
+      font-size: 18px;
+      resize: none;
+      @include mq(lg) {
+        width: 500px;
+      }
+      @include mq(md) {
+        width: 375px;
+        height: 143px;
+        font-size: 16px;
+      }
+      @include mq(xs) {
+        width: 100%;
+        height: 120px;
+        font-size: 16px;
+      }
+    }
+  }
+  .input-btn {
+    text-align: center;
+    @include mq(md){
+        text-align: left;
+    }
+    button {
+      border: 0;
+      outline: 0;
+      display: inline-block;
+      width: 280px;
+      height: 60px;
+      line-height: 60px;
+      text-align: center;
+      background: #e00024;
+      text-transform: uppercase;
+      color: #fff;
+      font-size: 24px;
+      font-weight: 700;
+      margin-right: 145px;
+      margin-bottom: 40px;
+      @include mq(xl){
+          margin-right: 120px;
+      }
+      @include mq(lg){
+        margin-right: 100px;
+        width: 250px;
+      }
+      @include mq(md){
+          margin-right: 0;
+          margin-left: 110px;
+          width: 200px;
+          height: 50px;
+          line-height: 50px;
+          font-size: 22px;
+      }
+      @include mq(xs){
+          width: 100%;
+          margin-right: 0;
+          margin-bottom: 20px;
+          font-size: 20px;
+      }
+    }
+  }
+}
+
+
+.map-img{
+  img{
+    width: 1257px;
+  }
+}

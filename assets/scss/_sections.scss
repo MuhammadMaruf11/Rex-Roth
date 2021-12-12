@@ -1,0 +1,258 @@
+@use "common"as *;
+
+.cart-tab {
+    .nav-tabs {
+        border: 0;
+
+        .nav-link {
+            flex: 1 0 0%;
+            border: 0;
+            position: relative;
+            margin: 0 40px;
+            padding-bottom: 26px;
+            font-size: 24px;
+            color: #002c49;
+            font-weight: 300;
+            font-family: 'Roboto', sans-serif;
+            text-transform: uppercase;
+
+            @include mq(lg) {
+                font-size: 20px;
+            }
+
+            @include mq(md) {
+                margin: 0 18px;
+                font-size: 15px;
+            }
+
+            @include mq(xs) {
+                margin: 0 0 20px;
+                font-size: 18px;
+                width: 100%;
+                flex: 1 0 100%;
+            }
+
+            &:first-child,
+            &:last-child {
+                margin-left: 0;
+                margin-right: 0;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 15px;
+                background: #e5e9ec;
+            }
+
+            &.active {
+
+                &::after {
+                    background: #00CCFF;
+                }
+            }
+        }
+    }
+}
+
+.register-form {
+    .title {
+        font-size: 18px;
+        font-weight: 800;
+        color: #606060;
+        text-transform: uppercase;
+    }
+
+    form {
+        border: 1px solid #e5e9ec;
+        padding: 20px;
+
+        @include mq(xs) {
+            padding: 0;
+            border: 0;
+        }
+    }
+
+    .input-wrap {
+        margin-bottom: 20px;
+
+        label {
+            font-size: 18px;
+            font-weight: 800;
+            color: #606060;
+            margin-bottom: 0;
+            display: block;
+            text-transform: capitalize;
+
+            span {
+                color: #e00024;
+                margin-left: 5px;
+            }
+        }
+
+        input {
+            width: 100%;
+            height: 40px;
+            border: 1px solid #00ccff;
+            padding: 0 13px;
+            outline: none;
+
+            &:focus {
+                @include placeholder() {
+                    color: transparent;
+                }
+            }
+
+            @include placeholder() {
+                color: #002c49;
+            }
+        }
+    }
+
+
+    .input-button {
+        button {
+            width: 260px;
+            height: 40px;
+            font-size: 18px;
+            font-weight: 800;
+            color: #fff;
+            text-align: center;
+            background: #e00024;
+            border: 0;
+            text-transform: uppercase;
+
+            @include mq(xs) {
+                width: 100%;
+            }
+        }
+    }
+
+    .input-checkbox {
+        margin-bottom: 20px;
+
+        input {
+            display: none;
+        }
+
+        .checkmark {
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            margin-right: 15px;
+            background: transparent;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1;
+            transition: all 0.3s;
+
+            &::before {
+                position: absolute;
+                content: "";
+                top: -5px;
+                bottom: -5px;
+                left: -5px;
+                right: -5px;
+                border: 1px solid #08CEFF;
+                background: none;
+                z-index: -1;
+                border-radius: 50%;
+            }
+        }
+
+        &.active {
+            .checkmark {
+                background: #E00024;
+            }
+        }
+
+        label {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            cursor: pointer;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+            padding-left: 35px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            span {
+                flex: 1 0 0%;
+                font-size: 18px;
+                font-weight: 300;
+                text-decoration: underline;
+                color: #002c49;
+            }
+        }
+    }
+}
+
+.register-form.register-form-2 {
+    form {
+        border: 0;
+        padding: 0;
+    }
+
+    .register-form-box {
+        border: 1px solid #e5e9ec;
+        padding: 20px;
+
+        @include mq(xs) {
+            padding: 0;
+            border: 0;
+        }
+    }
+
+    .input-cart-btn {
+        button {
+            color: #002c49;
+            background: #fff;
+            height: 60px;
+            border: 1px solid #00ccff;
+            text-transform: uppercase;
+            font-size: 24px;
+
+            @include mq(xs) {
+                font-size: 16px;
+            }
+
+            @include transition(0.3s);
+
+            &:hover {
+                background: #00ccff;
+                color: #fff;
+            }
+        }
+    }
+
+    .input-submit-btn {
+        button {
+            color: #fff;
+            background: #00ccff;
+            height: 60px;
+            border: 1px solid #00ccff;
+            text-transform: uppercase;
+            font-size: 24px;
+
+            @include mq(xs) {
+                font-size: 16px;
+            }
+
+            @include transition(0.3s);
+
+            &:hover {
+                background: #fff;
+                color: #002c49;
+            }
+        }
+    }
+}
